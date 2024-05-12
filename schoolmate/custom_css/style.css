@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap');
+*{
+  line-height: 1.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+h2{
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 1rem;
+}
+.navbar-brand span{
+  font-size: 2.1rem;
+    font-family: Caveat;
+    font-weight: 700;
+    color: rgb(242, 9, 9);
+}
+.header-home{
+    background-image: url("../image/bg-image/home.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .header-home div:nth-child(1) h2{
+    font-size: 39px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(114, 23, 23);
+  }
+  .header-home div:nth-child(2) p{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgb(248, 244, 244);
+}
+
+.about{
+text-align: center;
+padding: 20px 0;
+}
+
+.about .row  div.col-sm-12 p{
+  margin: 30px 0;
+  font-weight: 500;
+}
+.about i img{
+  width: 50px ;
+  height: 50px;
+  margin: 15px 0;
+}
+.service .col-lg-5{
+  margin-top: 50px;
+}
+.service .col-lg-5 h4{
+  margin-top: 40px;
+}
+.service .col-sm-6 img{
+  width: 50px;
+  height:50px;
+}
+@media (min-width:965px) {
+  .service .col-lg-5{
+  margin-top: 280px;
+}
+}
+@media (max-width:350px) {
+  .header-home div:nth-child(1) h2{
+    font-weight: 500;
+  }
+}

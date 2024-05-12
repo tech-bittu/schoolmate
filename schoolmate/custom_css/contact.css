@@ -1,0 +1,109 @@
+
+.form-container{
+    border-radius: 13px;
+    background-color: rgba(30, 28, 28, 0.753);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    margin-bottom: 10px;
+  }
+  .form-container::before{
+    content: '';
+    width: 200%;
+    height: 150%;
+    position: absolute;
+    background-image:conic-gradient(transparent,transparent,transparent,red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animate 4s infinite linear;
+  }
+  .form-container::after{
+    content: '';
+    width: 200%;
+    height: 150%;
+    position: absolute;
+    background-image:conic-gradient(transparent,transparent,transparent,rgb(220, 203, 21));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animate 4s infinite linear;
+    animation-delay: -2s;
+  }
+  @keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+  .form-tag{
+    width: 96%;
+    height: 97.5%;
+    padding: 9px;
+    z-index: 99;
+    border-radius: 13px;
+    background-color: rgba(182, 187, 190);
+    padding-bottom: 29px;
+  }
+  form h3{
+    font-size: 40px;
+    text-shadow: 2px 2px 3px red;
+  }
+  input:not(input[type="radio"],input[type="search"]),.gender,.country-div,textarea{
+    width: 97%;
+    padding: 9px;
+    padding-left: 20px;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    margin: 9px 0;
+    background: rgba(16, 6, 6, 0.68);
+    color: rgb(12, 222, 237);
+  }
+  .gender{
+    background: rgba(16, 6, 6, 0.68);
+    color: rgb(12, 222, 237);
+  }
+  .sub{
+    width: 100%;
+  }
+  .sub>div{
+    width: 50%;
+  }
+  input:hover:not(input[type="search"]),.gender:hover,.gender:hover,textarea:hover,.country-div:hover{
+    background-color: rgb(80, 89, 95);
+    color: white;
+    font-size: 1.09rem;
+    font-weight: bold;
+    border: 3px solid rgb(0, 0, 0);
+  }
+  option{
+    margin-left: 10px;
+    width: 50%;
+    padding-left: 10px;
+  }
+  input[type="submit"]:not(input.btn){
+    background-color: rgb(34, 6, 239);
+    color: white;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: white;
+      opacity: 1; /* Firefox */
+  }
+  .image-div{
+    height: 181px;
+    border-radius: 9px;
+    align-self: center;
+  }
+  .image-div img{
+    margin: auto;
+   border: 3px solid red;
+   height: 100%;
+  }
+  .hidden{
+    display: none !important;
+  }
